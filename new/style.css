@@ -1,0 +1,81 @@
+body {
+    background-color: #F6F6FA;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.wrapper {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.main-content {
+    padding-left: 88px;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: #e0ebfe;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    width: 370px;
+}
+.sidebar1 {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.sidebar2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.sidebar3 {
+    padding-bottom: 40px;
+}
+.mydscr {
+    color: #595959;
+    font-size: 14px;
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+/* projects */
+.myproj {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 8px;
+    padding-left: 8px;
+}
+
+.projects1 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    
+}
+.linka {
+    color: blue;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline;
+}
+.tech {
+    color: 595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline;
+}
