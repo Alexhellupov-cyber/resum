@@ -36,7 +36,7 @@ a:hover{
 
 /* Стили для основного контента */
 .main-content {
-    background-color: white;
+    background-color: #f4d7d338;
     padding: 80px 40px;
     box-sizing: border-box;
     border-radius: 20px;
@@ -51,7 +51,7 @@ a:hover{
     font-family: 'Playfair Display', serif;
     font-size: 30px;
     font-weight: bold;
-    color: #333;
+    color: #262626;
     padding: 10px 20px;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -64,7 +64,7 @@ a:hover{
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 42px;
-    color: #2c3e50;
+    color: #262626;
     margin-bottom: 20px;
 }
 
@@ -216,7 +216,7 @@ a:hover{
 }
 
 .projtitle {
-    background-color: #ffffffce; 
+    background-color: #f4d7d338; 
     text-align: center;
     border-radius: 20px;
     padding: 10px 30px;
@@ -232,7 +232,7 @@ a:hover{
 
 .card {
     flex: 1 1 calc(33.33% - 20px); /* Устанавливаем ширину карточек, с учетом отступов */
-    background-color: #ffffff;
+    background-color: #f4d7d35f;
     border-radius: 20px;
     padding: 10px; /* Отступы внутри карточки */
     box-sizing: border-box;
