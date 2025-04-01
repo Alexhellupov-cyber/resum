@@ -1,55 +1,148 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap');
+
+/* Основные стили для body */
 body {
     background-color: #F6F6FA;
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
-    font-family: "Montserrat", sans-serif;
-    
-}
-.wrapper {
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.main-content {
-    padding-left: 88px;
-    padding-top: 80px;
-    padding-right: 40px;
-    padding-bottom: 80px;
-    box-sizing: border-box;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif; /* Основной шрифт */
+    background-image: url(./img/headerimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
+a{
+    text-decoration-line: none;
+    color: chocolate;
+}
+
+a:hover{
+    color: rgb(237, 118, 34);
+}
+/* Основные стили для wrapper */
+.wrapper {
+    padding: 40px;
+    display: flex;
+    /* position: fixed; */
+    border-radius: 35px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+/* Стили для основного контента */
+.main-content {
+    background-color: white;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    background-color: rgba(18, 16, 12, 0.09);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.main-content h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Описание */
+.mydscr {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+/* Стили для sidebar */
 .sidebar {
-    background-color: #e0ebfe;
     padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: #f4d7d338;
+    justify-content: center;
     box-sizing: border-box;
     width: 370px;
+    border-radius: 20px;
 }
+
 .sidebar1 {
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
 }
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar1 button {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar1 button:hover {
+    transform: scale(1.1);
+}
+
+.sidebar1 img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
 .sidebar2 {
     padding-left: 40px;
     padding-right: 40px;
-    
+    text-align: center;
 }
+
 .sidebar3 {
     padding-bottom: 40px;
 }
+
 .mydscr {
     color: #595959;
     font-size: 14px;
-    font-family: montserrat;
-    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 24px;
 }
-/* projects */
+
+/* Проекты */
 .myproj {
+    
     color: #000;
     font-size: 22px;
     font-weight: 700;
@@ -57,14 +150,41 @@ body {
     margin-bottom: 8px;
     padding-left: 8px;
 }
+.myproj h3{
+    background-color: rgba(18, 16, 12, 0.09);
+    text-align: center
+}
+
+.myproj a{
+    text-decoration-line: none;
+    color: chocolate;
+}
+.myproj a:hover{
+    text-decoration-line: none;
+    color: rgb(237, 118, 34);
+}
+.myproj span{
+    text-decoration-line: none
+}
+
+.workexp h3{
+    align-items: center;
+    text-align: center;
+    background-color: rgba(18, 16, 12, 0.09);
+}
+
+.workexp li{
+    text-decoration: none;
+    list-style-type: none;
+}
 
 .projects1 {
     color: #000;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-    
 }
+
 .linka {
     color: blue;
     font-size: 14px;
@@ -72,10 +192,92 @@ body {
     line-height: 24px;
     text-decoration: underline;
 }
+
 .tech {
-    color: 595959;
+    color: #595959;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     text-decoration: underline;
 }
+
+
+.listproj{
+    /* background-color: #ffffff; */
+    padding: 40px;
+    /* display: flex; */
+    /* position: fixed; */
+    border-radius: 35px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.projtitle {
+    background-color: #ffffffce; 
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 30px;
+    display: block;
+}
+
+.listcard {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переходить на новую строку при необходимости */
+    justify-content: space-between; /* Равномерное распределение карточек */
+    gap: 20px; /* Добавляем отступы между карточками */
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 20px); /* Устанавливаем ширину карточек, с учетом отступов */
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px; /* Отступы внутри карточки */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%; /* Изображение будет растягиваться по ширине */
+    height: 200px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Изображение будет обрезано, чтобы покрыть весь контейнер */
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: chocolate;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out
+}
+
+
+.card a:hover {
+    transform: scale(1.2px);
+    background-color: rgb(237, 118, 34);;
+}
+
+/* Анимация при наведении на карточку */
+.card:hover {
+    transform: scale(1.05);
+}
+
+
