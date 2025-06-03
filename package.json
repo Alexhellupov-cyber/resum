@@ -1,0 +1,29 @@
+{
+  "name": "resum",
+  "version": "1.0.0",
+  "description": "My CV",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexhellupov-cyber/resum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexhellupov-cyber/resum/issues"
+  },
+  "homepage": "https://github.com/Alexhellupov-cyber/resum#readme",
+  "devDependencies": {
+    "vite": "^6.2.5"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
